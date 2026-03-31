@@ -56,7 +56,7 @@ spec:
         description: Workspace containing the source code to verify.
   steps:
     - name: verify
-      image: quay.io/redhat-appstudio/rhtap-task-runner:latest
+      image: quay.io/tsscdavp/rhtap-task-runner:custom
       script: |
         echo "running verify-conforma"
         $(workspaces.source.path)/tssc/verify-conforma.sh

@@ -63,7 +63,7 @@ spec:
             key: username
   steps:
     - name: deploy-check
-      image: quay.io/redhat-appstudio/rhtap-task-runner:latest
+      image: quay.io/tsscdavp/rhtap-task-runner:custom
       script: |
         echo "running acs-deploy-check"
         /workspace/source/tssc/acs-deploy-check.sh

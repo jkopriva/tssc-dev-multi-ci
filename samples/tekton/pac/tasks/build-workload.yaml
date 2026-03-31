@@ -110,7 +110,7 @@ spec:
             key: cosign.pub
   steps:
     - name: init
-      image: quay.io/redhat-appstudio/rhtap-task-runner:latest
+      image: quay.io/tsscdavp/rhtap-task-runner:custom
       args:
         - $(params.BUILD_ARGS[*])
       script: |
@@ -135,7 +135,7 @@ spec:
           name: tmpfiles
       imagePullPolicy: Always
     - name: build
-      image: quay.io/redhat-appstudio/rhtap-task-runner:latest
+      image: quay.io/tsscdavp/rhtap-task-runner:custom
       args:
         - $(params.BUILD_ARGS[*])
       script: |
